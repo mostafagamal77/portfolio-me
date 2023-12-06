@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ==========Start Meta========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Gamal" />
+    <meta name="description" content="My Portfolio" />
+    <meta name="keywords" content="html,css,js,jquery,bootstrap5" />
+    <!-- ==========End Meta========== -->
+
+    <title>MostafaGamal</title>
+    <!-- ==========Favicon========== -->
+    <link rel="icon" href="imgs/fav_icon.icon" />
+    <!-- ==========Bootstrap========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ==========Font Awesome========== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ==========AOS css========== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ==========Main Style CSS========== -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ====================Start PreLoader==================== -->
+    <div class="preloader-container d-none">
+      <div class="preloader">
+        <div class="logo-content">
+          <img class=" img-fluid" src="imgs/logo.png" alt="">
+        </div>
+        <div class="face face1">
+          <div class="circle"></div>
+        </div>
+        <div class="face face2"><div class="circle"></div></div>
+      </div>
+    </div>
+    <!-- ====================End PreLoader==================== -->
+
+    <!-- ====================Start Page Header==================== -->
+    <header class="page-header position-fixed w-100">
+      <div class="container">
+        <nav class="page-nav d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a href="index.html">
+              <img class="img-fluid" src="imgs/logo.png" alt="logo image" />
+            </a>
+          </div>
+          <button class="toggle-btn btn d-md-none">
+            <i
+              class="fa-duotone fa-bars fa-lg"
+              style="--fa-primary-opacity: 1; --fa-secondary-opacity: 0.4"
+            ></i>
+          </button>
+          <ul
+            class="links-menu d-none d-md-flex gap-3 align-items-center align-content-between"
+          >
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#works">My Works</a></li>
+          </ul>
+          <button class="animated-button d-none d-md-block">
+            <span>
+              <a href="#contact">Contact Me</a>
+            </span>
+            <span></span>
+          </button>
+        </nav>
+
+        <div class="toggle-menu d-md-none">
+          <ul class="links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#works">My Works</a></li>
+          </ul>
+          <div class="text-white text-center fw-medium fs-5 my-4">Social</div>
+          <ul class="social d-flex justify-content-evenly gap-3">
+            <li>
+              <a
+                target="_blank"
+                class="d-flex justify-content-center align-items-center fs-4 linkedin"
+                href="https://www.linkedin.com/in/mostafa-gamal-104267248/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="d-flex justify-content-center align-items-center fs-4 github"
+                href="https://github.com/mostafagamal77"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="d-flex justify-content-center align-items-center fs-4 facebook"
+                href="https://www.facebook.com/darshgemy/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="d-flex justify-content-center align-items-center fs-4 whats"
+                href="http://wa.me/+201020089126"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="d-flex justify-content-center align-items-center fs-4 gmail"
+                href="mailto:mostafagamal7030@gmail.com"
+                ><i class="fa-duotone fa-m"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="w-100 text-center">
+            <button class="animated-button my-5">
+              <span>
+                <a href="#contact">Let's Talk</a>
+              </span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====================End Page Header==================== -->
+
+    <!-- ====================Start Main Content==================== -->
+    <main>
+      <!-- ====================Start Landing==================== -->
+      <section
+        id="home"
+        class="landing d-flex align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div
+            class="landing-content row flex-column flex-md-row justify-content-center justify-content-md-between"
+          >
+            <div
+              class="col col-md-6 mb-md-0 landing-details d-flex flex-column-reverse flex-md-row gap-4 align-items-center"
+            >
+              <div
+                class="social mb-4 mb-md-0 d-flex flex-md-column gap-3 align-items-center justify-content-center"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mostafa-gamal-104267248/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a target="_blank" href="https://github.com/mostafagamal77"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a target="_blank" href="https://www.facebook.com/darshgemy/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="landing-text text-center text-md-start">
+                <div class="name-container">
+                  <span class="fs-6">Hi,</span> <br />
+                  <h1 class="mt-2">
+                    I'm
+                    <span class="name text-gradient fw-medium"
+                      >Mostafa Gamal</span
+                    >
+                  </h1>
+                </div>
+                <div class="jop fs-3 fw-medium my-2">
+                  <span class="jop-title"></span>
+                </div>
+                <p class="jop-sub">
+                  I am an enthusiastic Front-End Developer passionate about the
+                  field and dedicated to continuous learning, Welcome to my
+                  portfolio.
+                </p>
+                <button class="animated-button mt-2">
+                  <span
+                    ><a href="#" download
+                      >Download CV <i class="fa-duotone fa-download"></i></a
+                  ></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-5 col-md-5 profile mx-auto">
+              <div class="profile-img">
+                <div class="fix"></div>
+                <img
+                  src="imgs/profile.png"
+                  alt="profile img"
+                  class="fix mg-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Landing==================== -->
+      <!-- ====================Start About==================== -->
+      <section class="about py-5 position-relative" id="about">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-uppercase text-gradient mx-auto my-5 fs-1">
+            about me <span>about me</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row gap-5 justify-content-center align-items-center">
+            <div
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              class="col-9 col-md-4 about-img"
+            >
+              <img src="imgs/about.png" alt="about image" class="img-fluid" />
+            </div>
+            <div class="col-10 col-md-6">
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <h3 class="lh-base">
+                  Mostafa <br />
+                  Gamal Hamed
+                </h3>
+                <p class="about-sub mt-3">
+                  I'm a front-end developer. I enjoy learning web development
+                  and I learn increasingly. I can build and maintain responsive
+                  websites. For now, i'm working as a junior web developer.
+                </p>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="about-contact"
+              >
+                <h3>Contact</h3>
+                <p class="contact-sub">
+                  Do you fancy hi to me or you want to get started with your
+                  project and you need my help? Feel free to contact me.
+                </p>
+                <p class="gmail text-gradient">mostafagamal7030@gmail.com</p>
+                <button class="animated-button mt-3">
+                  <span><a href="#contact">Let's Talk</a></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End About==================== -->
+
+      <!-- ====================Start Skills==================== -->
+      <section class="skills py-5 position-relative" id="skills">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-uppercase text-gradient mx-auto my-5 fs-1">
+            my skills <span>my skills</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="skills-container row g-4 justify-content-center">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="skills-content col-md-8 text-center"
+            >
+              <h3 class="">Skills</h3>
+              <div class="skills-box d-flex justify-content-center flex-wrap">
+                <div class="skill">
+                  <img src="imgs/skills-icons/html-icon.png" alt="html icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/css-icon.png" alt="css icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/js.png" alt="js icon" />
+                </div>
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/bootstrap.png"
+                    alt=" bootstrap icon"
+                  />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/sass.png" alt="sass icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/jquery.png" alt="jquery icon" />
+                </div>
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/typescript.png"
+                    alt="typescript icon"
+                  />
+                </div>
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/firebase.png"
+                    alt="firebase icon"
+                  />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/git.png" alt="git icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/github.png" alt="github icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/mysql.png" alt="mysql icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/c++.png" alt="c++ icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/python.png" alt="python icon" />
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="current-content col-md-8 text-center"
+            >
+              <h3 class="">Current learning</h3>
+              <div class="current-box d-flex justify-content-center flex-wrap">
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/angular-icon.png"
+                    alt="angular icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="future-content col-md-8 text-center"
+            >
+              <h3 class="">Future Steps</h3>
+              <div class="future-box d-flex justify-content-center flex-wrap">
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/angular-material.png"
+                    alt="angular material icon"
+                  />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/RxJs.png" alt="RxJs icon" />
+                </div>
+                <div class="skill">
+                  <img src="imgs/skills-icons/ngrx.png" alt="NgRx icon" />
+                </div>
+                <div class="skill">
+                  <img
+                    src="imgs/skills-icons/tailwind.png"
+                    alt="tailwind icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Skills==================== -->
+
+      <!-- ====================Start Services==================== -->
+      <section class="services py-5 position-relative" id="services">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-uppercase text-gradient mx-auto my-5 fs-1">
+            my services <span>my services</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row gap-3 justify-content-center">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="service-box py-5 d-flex flex-column align-items-center justify-content-center gap-3 col-10 col-md-5 col-lg-2"
+            >
+              <i class="far fa-palette"></i>
+              <span>Website Design</span>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="service-box py-5 d-flex flex-column align-items-center justify-content-center gap-3 col-10 col-md-5 col-lg-2"
+            >
+              <i class="fa-solid fa-code"></i>
+              <span>Website Development</span>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="service-box py-5 d-flex flex-column align-items-center justify-content-center gap-3 col-10 col-md-5 col-lg-2"
+            >
+              <i class="far fa-browser"></i>
+              <span>Responsive Design</span>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="service-box py-5 d-flex flex-column align-items-center justify-content-center gap-3 col-10 col-md-5 col-lg-2"
+            >
+              <i class="far fa-brackets"></i>
+              <span>Clean Code</span>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Services==================== -->
+
+      <!-- ====================Start Resume==================== -->
+      <section class="resume py-5 position-relative" id="resume">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-uppercase text-gradient mx-auto my-5 fs-1">
+            my resume <span>my resume</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="resume-content row gap-5">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="summary col-12 col-md-6"
+            >
+              <h3>Summary</h3>
+              <div class="content position-relative px-3">
+                <p class="summary-sub">
+                  I am a fresh front-end developer who is increasingly learning
+                  quickly and is passionate about the field. I can build and
+                  maintain responsive websites. I'm a graduate of faculty
+                  Navigation Science and Space Technology. I'm working with
+                  HTML5, CSS3, JavaScript, Bootstrap5, TypeScript, jQuery, Sass
+                  and soon I will work with Angular framework. I can deal with
+                  plugins like (Swipperjs, Emailjs, SweetAlert, MixItUp, and
+                  Aosjs, etc...).
+                </p>
+                <div class="summary-info">
+                  <div class="info-box d-flex align-items-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="ms-2"
+                      >Egypt, Qalyubia, Qalyub, Shagret Eldor ST.</span
+                    >
+                  </div>
+                  <div class="info-box d-flex align-items-center my-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="ms-2">
+                      <span>01020089126</span>/<span>01112133954</span>
+                    </span>
+                  </div>
+                  <div class="info-box d-flex align-items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="ms-2">mostafagamal7030@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="education col-12 col-md-5"
+            >
+              <h3>Education</h3>
+              <div class="content position-relative px-3">
+                <p class="bachelor">Bachelor Degree</p>
+                <div class="time">Sep 2018 - Jul 2023</div>
+                <p class="collage">
+                  Faculty of Navigation Science and Space Technology
+                </p>
+                <div class="department mb-2">
+                  <span class="fw-medium">Department:-</span> Space Navigation
+                </div>
+                <div class="degree mb-2">
+                  <span class="fw-medium">Degree:-</span> Very good B+
+                  (GPA:3.27/4.00).
+                </div>
+                <div class="department">
+                  <span class="fw-medium">Graduation Project Degree:-</span>
+                  Excellent
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Resume==================== -->
+
+      <!-- ====================Start Works==================== -->
+      <section class="works py-5 position-relative" id="works">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-uppercase text-gradient mx-auto my-5 fs-1">
+            my works <span>my works</span>
+          </h2>
+        </div>
+        <div class="container">
+          <ul
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="works-tabs d-flex gap-2 mb-5 justify-content-center align-items-center"
+          >
+            <li class="tab-active mixitub-control-active" data-filter="*">
+              All
+            </li>
+            <li data-filter=".web">Web</li>
+            <li data-filter=".crud">Crud</li>
+            <li data-filter=".angular">Angular</li>
+          </ul>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="row g-4 works-box"
+          >
+            <div class="box-item col-md-6 col-lg-3 mix crud">
+              <img
+                class="img-fluid"
+                src="imgs/works/work1.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/GYM-Management"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/GYM-Management/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web">
+              <img
+                class="img-fluid"
+                src="imgs/works/work2.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/Portfolio"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/Portfolio/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web">
+              <img
+                class="img-fluid"
+                src="imgs/works/work3.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/Quran-MP3"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/Quran-MP3/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web">
+              <img
+                class="img-fluid"
+                src="imgs/works/work4.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/Bondi-Design"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/Bondi-Design/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web crud">
+              <img
+                class="img-fluid"
+                src="imgs/works/work5.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/To-Do_List_App/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/To-Do_List_App/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web">
+              <img
+                class="img-fluid"
+                src="imgs/works/work6.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href="https://github.com/mostafagamal77/Quiz_App"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/Quiz_App/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix web">
+              <img
+                class="img-fluid"
+                src="imgs/works/work7.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a
+                  target="_blank"
+                  href=" https://github.com/mostafagamal77/HTML_CSS-Template"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://mostafagamal77.github.io/HTML_CSS-Template/"
+                  ><i class="fa-duotone fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-item col-md-6 col-lg-3 mix angular">
+              <img
+                class="img-fluid"
+                src="imgs/works/work8.png"
+                alt="work image"
+              />
+              <div class="box-overlay">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-duotone fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Works==================== -->
+
+      <!-- ====================Start Contact==================== -->
+      <section class="contact py-5 position-relative" id="contact">
+        <div
+          class="section-heading text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h2 class="text-capitalize text-gradient mx-auto my-5 fs-1">
+            contact me <span>contact me</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div
+            class="contact-container px-0 px-md-4 py-5 row justify-content-center mx-auto"
+          >
+            <div class="col-10 col-md-6">
+              <h4 data-aos="fade-right" data-aos-duration="1000">
+                Get In Touch
+              </h4>
+              <div data-aos="fade-left" data-aos-duration="1000" class="info">
+                <div class="info-box d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class="ms-2"
+                    >Egypt, Qalyubia, Qalyub, Shagret Eldor ST.</span
+                  >
+                </div>
+                <div class="info-box d-flex align-items-center my-3">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="ms-2">
+                    <span>01020089126</span><br /><span>01112133954</span>
+                  </span>
+                </div>
+                <div class="info-box d-flex align-items-center">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="ms-2">mostafagamal7030@gmail.com</span>
+                </div>
+                <ul
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  class="social my-5 d-flex justify-content-center justify-content-md-start gap-2 gap-md-3"
+                >
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex justify-content-center align-items-center fs-4 linkedin"
+                      href="https://www.linkedin.com/in/mostafa-gamal-104267248/"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex justify-content-center align-items-center fs-4 github"
+                      href="https://github.com/mostafagamal77"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex justify-content-center align-items-center fs-4 facebook"
+                      href="https://www.facebook.com/darshgemy/"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex justify-content-center align-items-center fs-4 whats"
+                      href="http://wa.me/+201020089126"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="d-flex justify-content-center align-items-center fs-4 gmail"
+                      href="mailto:mostafagamal7030@gmail.com"
+                      ><i class="fa-duotone fa-m"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="col-10 col-md-6"
+            >
+              <h4>Send Me a Message?</h4>
+              <div class="contact-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="input" id="username" />
+                  <label for="username">Name</label>
+                  <span class="span">Name</span>
+                  <span class="validate">
+                    <i
+                      id="timesCircleName"
+                      class="times-name fad fa-times-circle text-danger d-none"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="check-name fad fa-check-circle text-success d-none"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="input" id="email" />
+                  <label for="email">Email</label>
+                  <span class="span">Email</span>
+                  <span class="validate">
+                    <i
+                      id="timesCircleEmail"
+                      class="times-email fad fa-times-circle text-danger d-none"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="check-email fad fa-check-circle text-success d-none"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" class="input" id="phone" />
+                  <label for="phone">Phone</label>
+                  <span class="span">Phone</span>
+                  <span class="validate">
+                    <i
+                      id="timesCirclePhone"
+                      class="times-phone fad fa-times-circle text-danger d-none"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="check-phone fad fa-check-circle text-success d-none"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="input"
+                  ></textarea>
+                  <label for="message">Message</label>
+                  <span class="span">Message</span>
+                  <span class="validate">
+                    <i
+                      id="timesCircleMess"
+                      class="times-mess fad fa-times-circle text-danger d-none"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="check-mess fad fa-check-circle text-success d-none"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+                <div class="message-sent mb-3 d-none">
+                  Message sent successfully
+                  <i class="text-success fa-solid fa-square-check"></i>
+                </div>
+                <button class="btn submit">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <!-- ====================End Contact==================== -->
+    </main>
+    <!-- ====================End Main Content==================== -->
+
+    <!-- ====================Start Page Footer==================== -->
+    <footer class="page-footer text-center p-3">
+      <p class="mb-0 fw-medium fs-md-5">Mostafa Gamal Portfolio 2023</p>
+    </footer>
+    <!-- ====================End Page Footer==================== -->
+
+    <!-- ====================Start Scroll Top==================== -->
+    <div class="scroll-top">
+      <i class="fa-duotone fa-chevrons-up"></i>
+    </div>
+    <!-- ====================End Scroll Top==================== -->
+
+    <!-- ====================Start Scripts and Plugins==================== -->
+    <!-- ==========jQuery js========== -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ==========Bootstrap========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ==========Font Awesome========== -->
+    <script src="js/all.min.js"></script>
+    <!-- ==========Typed js Plugin========== -->
+    <script src="js/typed.js"></script>
+    <script>
+      $(document).ready(() => {
+        let typed = new Typed(".jop-title", {
+          strings: ["Frontend Developer", "Web Designer"],
+          typeSpeed: 80,
+          backSpeed: 140,
+          loop: true
+        });
+      });
+    </script>
+    <!-- ==========Mixitup js Plugin========== -->
+    <script src="js/mixitup.js"></script>
+    <script>
+      $(document).ready(function () {
+        var mixer = mixitup(".works-box");
+      });
+    </script>
+    <!-- ==========AOS js Plugin========== -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ==========Email js========== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- ==========Main JS File========== -->
+    <script src="js/main.js"></script>
+    <!-- ====================End Scripts and Plugins==================== -->
+  </body>
+</html>
