@@ -22,18 +22,16 @@ const preloader = document.querySelector(".preloader"),
 
 
 /*---------- Start Preloader ----------*/
-
 $(document).ready(function () {
-  $(".preloader").fadeOut(2800, () => {
-    $(".preloader")
+  $(".img-container").fadeOut(3000, () => {
+    $(".img-container")
       .parent()
-      .fadeOut(3200, () => {
-        $(".preloader-container").remove();
+      .fadeOut(3000, () => {
+        $(".preloader").remove();
         $("body").css("overflow-y", "auto");
       });
   });
 });
-
 /*---------- End Preloader ----------*/
 
 

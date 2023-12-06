@@ -54,7 +54,7 @@ a {
 
 /* ====================Start Components==================== */
 /* ---------- Start Preloader ----------*/
-/* .preloader {
+.preloader {
   width: 100vw;
   height: 100%;
   position: fixed;
@@ -74,7 +74,7 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: var(--black-color);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -97,127 +97,26 @@ a {
   & .img-container::before {
     width: 160px;
     height: 160px;
-    border: 10px solid var(--text-color);
-    border-top-color: transparent;
-    animation: logoRotateLeft 1s linear infinite;
-    -webkit-animation: logoRotateLeft 1s linear infinite;
+    border: 3px solid var(--text-color);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    animation: logoRotate 1s linear infinite;
+    -webkit-animation: logoRotate 1s linear infinite;
   }
   & .img-container::after {
     width: 200px;
     height: 200px;
-    border: 10px solid var(--sec-color);
-    background-color: var(--black-color);
+    border: 3px solid var(--main-color);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
     border-bottom-color: transparent;
-    animation: logoRotateRight 1s linear infinite;
-    -webkit-animation: logoRotateRight 1s linear infinite;
-  }
-} */
-
-.preloader-container {
-  width: 100vw;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  background-color: #552f13cc;
-  backdrop-filter: blur(5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .logo-content {
-    position: absolute;
-    z-index: 5;
-    width: 140px;
-  }
-  .preloader {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    & .face {
-      position: absolute;
-      border: 4px solid #552f13cc;
-      & .circle {
-        position: absolute;
-        top: calc(50% - 1px);
-        left: 50%;
-        width: 50%;
-        height: 2px;
-        transform-origin: left;
-      }
-      & .circle::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        top: -4px;
-        right: -6px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-      }
-    }
-    & .face.face1 {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #994d1c;
-      box-shadow: 0 0 10px rgba(83, 46, 19, 0.5);
-      border-left: 3px solid #ff5100;
-      border-top: 3px solid #ff5100;
-      border-radius: 50%;
-      animation: logoRotate 1s linear infinite;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      -webkit-animation: logoRotate 1s linear infinite;
-      & .circle {
-        rotate: -45deg;
-      }
-    }
-    & .face.face2 {
-      top: 30px;
-      left: 30px;
-      right: 30px;
-      bottom: 30px;
-      background-color: #ed7d31;
-      box-shadow: 0 0 10px rgba(63, 40, 19, 0.5);
-      border-right: 3px solid #ed7d31;
-      border-bottom: 3px solid #ed7d31;
-      animation: logoRotateLeft 1s linear infinite;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      -webkit-animation: logoRotateLeft 1s linear infinite;
-      & .circle {
-        rotate: -45deg;
-      }
-    }
+    animation: logoRotate 1s linear reverse infinite;
+    -webkit-animation: logoRotate 1s linear reverse infinite;
   }
 }
 
-@keyframes logoRotateLeft {
-  from {
-    rotate: 0deg;
-  }
-  to {
-    rotate: -360deg;
-  }
-}
 @keyframes logoRotate {
   from {
     rotate: 0deg;
@@ -249,7 +148,7 @@ a {
       translate: -50% -50%;
       z-index: 1;
       font-size: 3.5rem;
-      width: 150%;
+      width: 140%;
       font-weight: bold;
       color: rgba(255, 255, 255, 0.02);
     }
