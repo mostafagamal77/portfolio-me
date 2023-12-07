@@ -526,7 +526,7 @@ main {
 }
 /* ====================Start  Landing==================== */
 .landing {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 104px);
   & .social {
     & a {
       width: 35px;
@@ -611,14 +611,14 @@ main {
     }
     @media (max-width: 767px) {
       & img {
-        width: 150px;
-        height: 200px;
+        width: 170px;
+        height: 230px;
       }
     }
     @media (max-width: 500px) {
       & img {
-        width: 120px;
-        height: 180px;
+        width: 150px;
+        height: 190px;
       }
     }
   }
