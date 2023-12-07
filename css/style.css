@@ -521,12 +521,10 @@ section {
 /* ==================== End Page Header ==================== */
 
 /* ====================Start Main Content==================== */
-main {
-  margin-top: 80px;
-}
+
 /* ====================Start  Landing==================== */
 .landing {
-  height: calc(100vh - 104px);
+  height: calc(100vh);
   & .social {
     & a {
       width: 35px;
