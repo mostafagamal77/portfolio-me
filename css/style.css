@@ -443,7 +443,7 @@ section {
   .toggle-menu {
     background: var(--gradient-color);
     position: fixed;
-    z-index: 1000;
+    z-index: 1500;
     top: -100vh;
     left: 0;
     width: 100%;
@@ -523,8 +523,10 @@ section {
 /* ====================Start Main Content==================== */
 
 /* ====================Start  Landing==================== */
+
 .landing {
-  height: calc(100vh);
+  height: calc(100vh - 80px);
+  margin-top: 80px;
   & .social {
     & a {
       width: 35px;
