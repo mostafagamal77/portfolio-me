@@ -50,6 +50,10 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: var(--sec-color);
 }
+::selection {
+  background-color: #b15d18;
+  color: var(--main-color-light);
+}
 /* ==================== End Global Rules ==================== */
 
 /* ====================Start Components==================== */

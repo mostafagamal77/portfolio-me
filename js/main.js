@@ -7,9 +7,6 @@ const preloader = document.querySelector(".preloader"),
   toggleMenu = document.querySelector(".toggle-menu"),
   linksMenu = document.querySelectorAll(".toggle-menu li"),
   linksToggle = document.querySelectorAll(".toggle-menu .links a"),
-  imgPopupBtn = document.querySelectorAll(".box-overlay span"),
-  imgPopup = document.querySelector(".img-popup"),
-  workImgs = document.querySelectorAll(".box-item img"),
   inputs = document.querySelectorAll(".input"),
   submitBtn = document.querySelector(".submit"),
   userNameInput = document.getElementById("username"),
@@ -123,14 +120,6 @@ liTabs.forEach((tab) => {
   });
 });
 /*---------- End Works all li active remover ----------*/
-
-/*---------- Start Work image popup ScrollSpy ----------*/
-imgPopupBtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    let img = btn.parentElement.previousElementSibling;
-  });
-});
-/*---------- End Work image popup ScrollSpy ----------*/
 
 /*---------------- End Works all li active remover ----------------*/
 
