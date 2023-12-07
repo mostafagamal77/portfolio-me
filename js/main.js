@@ -23,7 +23,7 @@ $(document).ready(function () {
   $(".img-container").fadeOut(3000, () => {
     $(".img-container")
       .parent()
-      .fadeOut(3000, () => {
+      .fadeOut(2500, () => {
         $(".preloader").remove();
         $("body").css("overflow-y", "auto");
       });
