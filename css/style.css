@@ -114,7 +114,7 @@ a {
     border: 3px solid #b33706;
     border-top-color: transparent;
     border-left-color: transparent;
-    background-color: rgba(217, 176, 148,0.5);
+    background-color: rgba(217, 176, 148, 0.5);
     z-index: -1;
     border-bottom-color: transparent;
     animation: logoRotate 1s linear reverse infinite;

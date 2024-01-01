@@ -14,10 +14,6 @@ const preloader = document.querySelector(".preloader"),
   userPhoneInput = document.getElementById("phone"),
   userMessageInput = document.getElementById("message");
 
-
-
-
-
 /*---------- Start Preloader ----------*/
 $(document).ready(function () {
   $(".img-container").fadeOut(3000, () => {
@@ -30,7 +26,6 @@ $(document).ready(function () {
   });
 });
 /*---------- End Preloader ----------*/
-
 
 /*---------- Start Toggle Menu ----------*/
 toggleBtn.addEventListener("click", () => {
