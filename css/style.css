@@ -85,6 +85,9 @@ a {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    & img {
+      width: 120px;
+    }
   }
   & .img-container::before,
   & .img-container::after {
@@ -397,7 +400,7 @@ section {
   }
   & nav {
     & .logo {
-      width: 120px;
+      width: 60px;
     }
     & .links-menu a {
       color: var(--main-color-light);
