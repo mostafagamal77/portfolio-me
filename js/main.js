@@ -15,7 +15,8 @@ const preloader = document.querySelector(".preloader"),
   userMessageInput = document.getElementById("message");
 
 /*---------- Start Preloader ----------*/
-$(document).ready(function () {
+$(document).ready(() => {
+  $("body").css("overflow-y", "hidden");
   $(".img-container").fadeOut(3000, () => {
     $(".img-container")
       .parent()
@@ -26,6 +27,15 @@ $(document).ready(function () {
   });
 });
 /*---------- End Preloader ----------*/
+
+/*---------- Start prevent scroll when open menu ----------*/
+$(document).ready(() => {
+  let isMenuAlreadyOpen = false;
+  $(".toggle-btn").on("click", () => {
+    $("body").css("overflow", isMenuAlreadyOpen ? "auto" : "hidden");
+    isMenuAlreadyOpen = !isMenuAlreadyOpen;
+  });
+});
 
 /*---------- Start Toggle Menu ----------*/
 toggleBtn.addEventListener("click", () => {
@@ -103,8 +113,73 @@ window.onscroll = () => {
 
 /*---------------- End Window Scroll ----------------*/
 
-/*---------------- Start Works all li active remover ----------------*/
-/*---------- Start Works all li active remover ----------*/
+/*---------------- Start Skills ----------------*/
+let skillsContainer = document.querySelector(".skills-box"),
+  currentLearning = document.querySelector(".current-box"),
+  futureSteps = document.querySelector(".future-box");
+
+fetchData("skills", skillsContainer, createSkill);
+fetchData("currentlearning", currentLearning, createSkill);
+fetchData("futuresteps", futureSteps, createSkill);
+
+// create skill box
+function createSkill({ id, src, alt, title }) {
+  let skill = document.createElement("div");
+  skill.className = "skill";
+  skill.innerHTML = `
+  <img 
+    loading = 'lazy'
+    src=${src}
+    alt=${alt}
+    title=${title}
+  />
+  `;
+  return skill;
+}
+
+function fetchData(domain, container, childDiv) {
+  let baseUrl = `http://localhost:3000/${domain}`;
+  fetch(baseUrl)
+    .then((res) => res.json())
+    .then((data) => {
+      data.map((item) => container.append(childDiv(item)));
+    });
+}
+/*---------------- End Skills ----------------*/
+
+/*---------------- Start Works  ----------------*/
+/*==start get data ==*/
+let worksContainer = document.querySelector(".works-box");
+
+fetchData("works", worksContainer, workBox);
+
+function workBox({ id, src, alt, category, code, demo }) {
+  let work = document.createElement("div");
+  work.classList.add("box-item", "col-md-6", "col-lg-3", "mix", category);
+  work.innerHTML = `
+  <img
+    class="img-fluid"
+    src=${src}
+    alt=${alt}
+  />
+  <div class="box-overlay">
+    <a
+      target="_blank"
+      href=${code}
+      ><i class="fa-brands fa-github"></i
+    ></a>
+    <a
+      target="_blank"
+      href=${demo}
+      ><i class="fa-duotone fa-link"></i
+    ></a>
+  </div>
+  `;
+  return work;
+}
+/*==end get data ==*/
+
+/* == Start Works all li active remover == */
 let liTabs = document.querySelectorAll(".works-tabs li"),
   allTab = document.querySelector(".tab-active");
 liTabs.forEach((tab) => {
@@ -114,9 +189,9 @@ liTabs.forEach((tab) => {
     }
   });
 });
-/*---------- End Works all li active remover ----------*/
+/* == End Works all li active remover == */
 
-/*---------------- End Works all li active remover ----------------*/
+/*---------------- End Works ----------------*/
 
 /*---------------- Start Contact  ----------------*/
 // input place holder

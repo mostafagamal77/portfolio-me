@@ -1,0 +1,207 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "src": "imgs/skills-icons/html-icon.webp",
+      "alt": "html icon",
+      "title": "html"
+    },
+    {
+      "id": 2,
+      "src": "imgs/skills-icons/css-icon.webp",
+      "alt": "css icon",
+      "title": "css"
+    },
+    {
+      "id": 3,
+      "src": "imgs/skills-icons/js.webp",
+      "alt": "js icon",
+      "title": "JS"
+    },
+    {
+      "id": 4,
+      "src": "imgs/skills-icons/bootstrap.webp",
+      "alt": "bootstrap icon",
+      "title": "bootstrap"
+    },
+    {
+      "id": 5,
+      "src": "imgs/skills-icons/sass.webp",
+      "alt": "sass icon",
+      "title": "sass"
+    },
+    {
+      "id": 6,
+      "src": "imgs/skills-icons/jquery.webp",
+      "alt": "jquery icon",
+      "title": "jquery"
+    },
+    {
+      "id": 7,
+      "src": "imgs/skills-icons/typescript.webp",
+      "alt": "typescript icon",
+      "title": "typescript"
+    },
+    {
+      "id": 8,
+      "src": "imgs/skills-icons/angular-icon.webp",
+      "alt": "angular icon",
+      "title": "Angular"
+    },
+    {
+      "id": 9,
+      "src": "imgs/skills-icons/firebase.webp",
+      "alt": "firebase icon",
+      "title": "firebase"
+    },
+    {
+      "id": 10,
+      "src": "imgs/skills-icons/git.webp",
+      "alt": "git icon",
+      "title": "git"
+    },
+    {
+      "id": 11,
+      "src": "imgs/skills-icons/github.webp",
+      "alt": "github icon",
+      "title": "github"
+    },
+    {
+      "id": 12,
+      "src": "imgs/skills-icons/c++.webp",
+      "alt": "c++ icon",
+      "title": "c++"
+    },
+    {
+      "id": 13,
+      "src": "imgs/skills-icons/python.webp",
+      "alt": "python icon",
+      "title": "python"
+    },
+
+    {
+      "id": 14,
+      "src": "imgs/skills-icons/mysql.webp",
+      "alt": "mysql icon",
+      "title": "mysql"
+    }
+  ],
+  "currentlearning": [
+    {
+      "id": 1,
+      "src": "imgs/skills-icons/angular-material.webp",
+      "alt": "Angular Material icon",
+      "title": "Angular Material"
+    },
+    {
+      "id": 2,
+      "src": "imgs/skills-icons/RxJs.webp",
+      "alt": "RxJs icon",
+      "title": "RxJs"
+    }
+  ],
+  "futuresteps": [
+    {
+      "id": 1,
+      "src": "imgs/skills-icons/ngrx.webp",
+      "alt": "NgRx icon",
+      "title": "NgRx"
+    },
+    {
+      "id": 2,
+      "src": "imgs/skills-icons/js.webp",
+      "alt": "js icon",
+      "title": "JS"
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "src": "imgs/works/work1.webp",
+      "alt": "work image",
+      "category": "angular",
+      "code": "https://github.com/mostafagamal77/FreshCart",
+      "demo": "https://mostafagamal77.github.io/FreshCart/#/home"
+    },
+    {
+      "id": 2,
+      "src": "imgs/works/work2.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/portfolio-me",
+      "demo": "https://mostafagamal77.github.io/portfolio-me/"
+    },
+    {
+      "id": 3,
+      "src": "imgs/works/work3.webp",
+      "alt": "work image",
+      "category": "crud",
+      "code": "https://github.com/mostafagamal77/GYM-Management",
+      "demo": "https://mostafagamal77.github.io/GYM-Management/"
+    },
+    {
+      "id": 4,
+      "src": "imgs/works/work4.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/Portfolio",
+      "demo": "https://mostafagamal77.github.io/Portfolio/"
+    },
+    {
+      "id": 5,
+      "src": "imgs/works/work5.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/Quran-MP3",
+      "demo": "https://mostafagamal77.github.io/Quran-MP3/"
+    },
+    {
+      "id": 6,
+      "src": "imgs/works/work6.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/Ostoora",
+      "demo": "https://mostafagamal77.github.io/Ostoora/"
+    },
+    {
+      "id": 7,
+      "src": "imgs/works/work7.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/Bondi-Design",
+      "demo": "https://mostafagamal77.github.io/Bondi-Design/"
+    },
+    {
+      "id": 8,
+      "src": "imgs/works/work8.webp",
+      "alt": "work image",
+      "category": "crud",
+      "code": "https://github.com/mostafagamal77/To-Do_List_App/",
+      "demo": "https://mostafagamal77.github.io/To-Do_List_App/"
+    },
+    {
+      "id": 9,
+      "src": "imgs/works/work9.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/Quiz_App",
+      "demo": "https://mostafagamal77.github.io/Quiz_App/"
+    },
+    {
+      "id": 10,
+      "src": "imgs/works/work10.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/HTML_CSS-Template",
+      "demo": "https://mostafagamal77.github.io/HTML_CSS-Template/"
+    },
+    {
+      "id": 11,
+      "src": "imgs/works/work11.webp",
+      "alt": "work image",
+      "category": "web",
+      "code": "https://github.com/mostafagamal77/HTML_CSS-Template2",
+      "demo": "https://mostafagamal77.github.io/HTML_CSS-Template2/"
+    }
+  ]
+}

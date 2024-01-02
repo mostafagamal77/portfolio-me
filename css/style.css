@@ -487,7 +487,6 @@ section {
     top: 80px;
   }
 }
-
 & .social {
   & li a {
     width: 50px;
@@ -527,7 +526,9 @@ section {
 /* ====================Start Main Content==================== */
 
 /* ====================Start  Landing==================== */
-
+main {
+  position: relative;
+}
 .landing {
   height: calc(100vh - 80px);
   margin-top: 80px;
@@ -846,7 +847,7 @@ section {
   }
   & .works-box {
     & .box-item {
-      height: 210px;
+      height: 190px;
       position: relative;
       overflow: hidden;
       & img {
