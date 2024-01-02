@@ -128,7 +128,6 @@ function createSkill({ id, src, alt, title }) {
   skill.className = "skill";
   skill.innerHTML = `
   <img 
-    loading = 'lazy'
     src=${src}
     alt=${alt}
     title=${title}
@@ -138,7 +137,7 @@ function createSkill({ id, src, alt, title }) {
 }
 
 function fetchData(domain, container, childDiv) {
-  let baseUrl = `http://localhost:3000/${domain}`;
+  let baseUrl = `https://myportfolio-data.onrender.com/${domain}`;
   fetch(baseUrl)
     .then((res) => res.json())
     .then((data) => {
@@ -191,6 +190,18 @@ liTabs.forEach((tab) => {
 });
 /* == End Works all li active remover == */
 
+$(document).ready( () => {
+  $(".list").click(function () { 
+    const value = $(this).attr('data-filter');
+    if (value == 'all') {
+      $(".box-item").show('1000')
+    } else {
+      $(".box-item").not('.'+value).hide('1000')
+      $(".box-item").filter('.'+value).show('1000')
+    }
+    
+  });
+})
 /*---------------- End Works ----------------*/
 
 /*---------------- Start Contact  ----------------*/

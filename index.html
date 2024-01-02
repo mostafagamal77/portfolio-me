@@ -494,12 +494,15 @@
             data-aos-duration="1000"
             class="works-tabs d-flex gap-2 mb-5 justify-content-center align-items-center"
           >
-            <li class="tab-active mixitub-control-active" data-filter="*">
+            <li
+              class="tab-active mixitub-control-active list"
+              data-filter="all"
+            >
               All
             </li>
-            <li data-filter=".web">Web</li>
-            <li data-filter=".crud">Crud</li>
-            <li data-filter=".angular">Angular</li>
+            <li class="list" data-filter="web">Web</li>
+            <li class="list" data-filter="crud">Crud</li>
+            <li class="list" data-filter="angular">Angular</li>
           </ul>
 
           <div
@@ -745,14 +748,6 @@
     <script>
       AOS.init();
     </script>
-    <!-- ==========Mixitup js Plugin========== -->
-    <script src="js/mixitup.js"></script>
-    <script>
-      $(document).ready(function () {
-        var mixer = mixitup(".works-box");
-      });
-    </script>
-
     <!-- ====================End Scripts and Plugins==================== -->
   </body>
 </html>
