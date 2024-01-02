@@ -179,29 +179,32 @@ function workBox({ id, src, alt, category, code, demo }) {
 /*==end get data ==*/
 
 /* == Start Works all li active remover == */
-let liTabs = document.querySelectorAll(".works-tabs li"),
-  allTab = document.querySelector(".tab-active");
+let liTabs = document.querySelectorAll(".works-tabs li");
 liTabs.forEach((tab) => {
-  tab.addEventListener("click", (e) => {
-    if (!e.target.classList.contains("tab-active")) {
-      allTab.classList.remove("tab-active");
-    }
+  tab.addEventListener("click", () => {
+    liTabs.forEach((li) => {
+      li.classList.remove("tab-active");
+      tab.classList.add("tab-active");
+    });
   });
 });
 /* == End Works all li active remover == */
 
-$(document).ready( () => {
-  $(".list").click(function () { 
-    const value = $(this).attr('data-filter');
-    if (value == 'all') {
-      $(".box-item").show('1000')
+$(document).ready(() => {
+  $(".list").click(function () {
+    const value = $(this).attr("data-filter");
+    if (value == "all") {
+      $(".box-item").show("1000");
     } else {
-      $(".box-item").not('.'+value).hide('1000')
-      $(".box-item").filter('.'+value).show('1000')
+      $(".box-item")
+        .not("." + value)
+        .hide("1000");
+      $(".box-item")
+        .filter("." + value)
+        .show("1000");
     }
-    
   });
-})
+});
 /*---------------- End Works ----------------*/
 
 /*---------------- Start Contact  ----------------*/
