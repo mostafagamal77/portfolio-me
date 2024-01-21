@@ -15,8 +15,8 @@ const preloader = document.querySelector(".preloader"),
   userMessageInput = document.getElementById("message");
 
 /*---------- Start Preloader ----------*/
+$("body").css("overflow-y", "hidden");
 $(document).ready(() => {
-  $("body").css("overflow-y", "hidden");
   $(".img-container").fadeOut(3000, () => {
     $(".img-container")
       .parent()
