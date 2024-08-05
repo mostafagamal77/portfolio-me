@@ -137,7 +137,7 @@ function createSkill({ id, src, alt, title }) {
 }
 
 function fetchData(domain, container, childDiv) {
-  let baseUrl = `https://myportfolio-data.onrender.com/${domain}`;
+  let baseUrl = `https://portfolio-api-xi-nine.vercel.app/${domain}`;
   fetch(baseUrl)
     .then((res) => res.json())
     .then((data) => {
