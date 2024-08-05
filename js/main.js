@@ -311,8 +311,8 @@ function sendEmail() {
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value
   };
-  const serviceId = "service_flto4rx",
-    templateId = "template_dzwv5y7";
+  const serviceId = "service_0asetck",
+    templateId = "template_ktow5vk";
 
   emailjs
     .send(serviceId, templateId, params)
